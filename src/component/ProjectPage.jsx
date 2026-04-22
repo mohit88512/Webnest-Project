@@ -1,5 +1,4 @@
 import React from 'react'
-// import './ProjectPage.css'
 
 import bustImg   from '../images/bust.png'
 import horsesImg from '../images/horse1.png'
