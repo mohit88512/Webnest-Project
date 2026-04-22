@@ -1,0 +1,175 @@
+/* ============================================
+   footer.css
+   Desktop: 1080px | Responsive below
+   ============================================ */
+
+.footer {
+  background: #2b2d2f;
+  color: #7a9ab0;
+  display: flex;
+  align-items: flex-start;
+  padding: 60px 80px 80px;
+  width: 1080px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* LEFT */
+.footer-left {
+  width: 260px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-touch {
+  font-size: 13px;
+  color: #c9a84c;
+  margin: 0 0 10px;
+}
+
+.footer-contact {
+  font-size: 13px;
+  color: #7a9ab0;
+  margin: 0;
+}
+
+.footer-address {
+  font-size: 13px;
+  color: #7a9ab0;
+  line-height: 1.7;
+  margin: 8px 0 28px;
+}
+
+.footer-logo {
+  width: 65px;
+}
+
+/* VERTICAL DIVIDER */
+.footer-divider {
+  width: 1px;
+  background: rgba(255,255,255,0.12);
+  align-self: stretch;
+  margin: 0 60px;
+  flex-shrink: 0;
+}
+
+/* RIGHT */
+.footer-right {
+  flex: 1;
+}
+
+.footer-heading {
+  font-size: 34px;
+  font-weight: 300;
+  color: #7a9ab0;
+  margin: 0 0 10px;
+}
+
+.footer-subheading {
+  font-size: 13px;
+  color: #7a9ab0;
+  margin: 0 0 36px;
+}
+
+/* FIELDS */
+.footer-field {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 24px;
+}
+
+.footer-input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #c9a84c;
+  color: #7a9ab0;
+  font-size: 14px;
+  padding: 8px 0;
+  outline: none;
+  width: 100%;
+}
+
+.footer-input::placeholder {
+  color: #4a6a7a;
+}
+
+.footer-label {
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  color: #4a6a7a;
+  margin-bottom: 4px;
+}
+
+/* BUTTON */
+.footer-btn {
+  width: 100%;
+  padding: 17px;
+  background: #3d4f5e;
+  color: #fff;
+  border: none;
+  border-radius: 40px;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 14px;
+  letter-spacing: 0.03em;
+}
+
+.footer-btn:hover {
+  background: #4a5f70;
+}
+
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 1080px) {
+  .footer {
+    width: 100%;
+    padding: 50px 40px 60px;
+  }
+
+  .footer-left {
+    width: 220px;
+  }
+
+  .footer-divider {
+    margin: 0 40px;
+  }
+
+  .footer-heading {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    padding: 40px 24px 60px;
+    gap: 0;
+  }
+
+  .footer-left {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  /* Hide vertical divider, show horizontal instead */
+  .footer-divider {
+    width: 100%;
+    height: 1px;
+    background: rgba(255,255,255,0.12);
+    margin: 0 0 36px;
+  }
+
+  .footer-right {
+    width: 100%;
+  }
+
+  .footer-heading {
+    font-size: 26px;
+  }
+}

@@ -1,0 +1,232 @@
+/* ============================================
+   designPage.css
+   Desktop: 1080px | Responsive below
+   ============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+.designMain {
+  background-color: #4a5568;
+  color: #ffffff;
+  padding: 60px 80px 80px;
+  width: 1080px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.designTagline {
+  text-align: center;
+  font-size: 13px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #cbd5e0;
+  margin-bottom: 20px;
+}
+
+.designHeading {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 1.25;
+  color: #ffffff;
+  max-width: 750px;
+  margin: 0 auto 50px;
+}
+
+/* HERO IMAGE */
+.imgWrapper {
+  position: relative;
+  margin-bottom: 60px;
+  padding-bottom: 18px;
+  padding-right: 18px;
+}
+
+.designBorder {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  border: 3px solid #c28c42;
+  z-index: 0;
+  border-top: none;
+}
+
+.designBorder::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  width: 60px;
+  height: 3px;
+  background: #c28c42;
+}
+
+.designBorder::after {
+  content: '';
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  width: 60px;
+  height: 3px;
+  background: #c28c42;
+}
+
+.designImg {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+}
+
+.designLabel {
+  font-size: 13px;
+  font-weight: 300;
+  color: #cbd5e0;
+  margin-bottom: 30px;
+}
+
+.designDivider {
+  border: none;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  margin-bottom: 0;
+}
+
+/* STAGE ROWS */
+.designStage {
+  padding: 50px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+  display: grid;
+  grid-template-columns: 1fr 1.4fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.designStageLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.designStageNumber {
+  font-size: 13px;
+  font-weight: 300;
+  color: #cbd5e0;
+  letter-spacing: 1px;
+}
+
+.designStageNumber::after {
+  content: '';
+  display: block;
+  width: 28px;
+  height: 2px;
+  background: #c28c42;
+  margin-top: 6px;
+}
+
+.designStageTitle {
+  font-size: 38px;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 1.2;
+  margin-top: 8px;
+}
+
+.designViewBtn {
+  margin-top: 30px;
+  background: none;
+  border: 1px solid rgba(255,255,255,0.4);
+  border-radius: 25px;
+  padding: 10px 22px;
+  color: #ffffff;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 13px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+}
+
+.designViewBtn:hover {
+  border-color: #c28c42;
+  color: #c28c42;
+}
+
+.designStageImg {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.designStageDesc {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 4px;
+}
+
+.designStageDesc p {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.8;
+  color: #cbd5e0;
+}
+
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 1080px) {
+  .designMain {
+    width: 100%;
+    padding: 50px 40px 70px;
+  }
+
+  .designHeading {
+    font-size: 38px;
+  }
+
+  .designStageTitle {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .designMain {
+    padding: 40px 24px 60px;
+  }
+
+  .designHeading {
+    font-size: 26px;
+    margin-bottom: 36px;
+  }
+
+  .designImg {
+    height: 240px;
+  }
+
+  /* Stack each stage vertically */
+  .designStage {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 36px 0;
+  }
+
+  .designStageTitle {
+    font-size: 26px;
+  }
+
+  .designStageImg {
+    height: 180px;
+  }
+
+  .designViewBtn {
+    margin-top: 16px;
+  }
+}

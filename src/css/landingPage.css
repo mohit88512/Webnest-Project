@@ -1,0 +1,311 @@
+/* ============================================
+   landingPage.css
+   Desktop: 1080px | Responsive below
+   ============================================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* NAV */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 60px;
+  width: 1080px;
+  margin: 0 auto;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.navlinks {
+  display: flex;
+  gap: 40px;
+}
+
+.navlinks button {
+  background: none;
+  border: none;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 15px;
+  color: #415465;
+  cursor: pointer;
+}
+
+.navlinks button:hover {
+  color: #c28c42;
+}
+
+.contact-btn {
+  background: none;
+  border: 2px solid #c28c42;
+  border-radius: 25px;
+  padding: 10px 24px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 14px;
+  color: #415465;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.contact-btn:hover {
+  background: #c28c42;
+  color: white;
+}
+
+/* MAIN */
+.main {
+  padding: 20px 60px 40px;
+  width: 1080px;
+  margin: 0 auto;
+}
+
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.heading h1 {
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #415465;
+}
+
+.heading h1 .gold {
+  color: #c28c42;
+}
+
+.right-text {
+  width: 200px;
+  padding-top: 8px;
+  flex-shrink: 0;
+}
+
+.right-text .small-para {
+  font-size: 12px;
+  line-height: 1.7;
+  color: #415465;
+  margin-bottom: 16px;
+}
+
+.right-text .gold-text {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #c28c42;
+  margin-bottom: 18px;
+}
+
+.right-text .horse-img {
+  width: 150px;
+  height: 130px;
+  object-fit: cover;
+}
+
+/* IMAGE AREA */
+.image-area {
+  position: relative;
+  width: 72%;
+  margin-left: 100px;
+  padding-bottom: 30px;
+  padding-right: 30px;
+}
+
+.gold-box {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 100%;
+  height: calc(100% - 30px);
+  background-color: #c28c42;
+  z-index: 0;
+}
+
+.main-img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  display: block;
+}
+
+/* BOTTOM ROW */
+.bottom-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.circle-wrapper {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  flex-shrink: 0;
+}
+
+.circle-svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  animation: spin 10s linear infinite;
+}
+
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90px;
+  height: 90px;
+  background: #415465;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.play-btn::after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 18px solid white;
+  margin-left: 5px;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+.bottom-desc {
+  max-width: 300px;
+  font-size: 13px;
+  line-height: 1.8;
+  color: #415465;
+  text-align: right;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #c5c8cc;
+  margin: 20px 60px 0;
+}
+
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 1080px) {
+  nav,
+  .main {
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .heading h1 {
+    font-size: 40px;
+  }
+
+  .image-area {
+    width: 80%;
+    margin-left: 60px;
+  }
+
+  .divider {
+    margin: 20px 40px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    padding: 16px 24px;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .navlinks {
+    gap: 20px;
+    order: 3;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .main {
+    padding: 20px 24px 40px;
+  }
+
+  /* Stack top row */
+  .top-row {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .heading h1 {
+    font-size: 30px;
+  }
+
+  .right-text {
+    width: 100%;
+  }
+
+  .right-text .horse-img {
+    width: 120px;
+    height: 100px;
+  }
+
+  /* Image area full width */
+  .image-area {
+    width: 100%;
+    margin-left: 0;
+    padding-bottom: 16px;
+    padding-right: 16px;
+  }
+
+  .main-img {
+    height: 260px;
+  }
+
+  .bottom-row {
+    margin-top: 30px;
+    gap: 20px;
+  }
+
+  .circle-wrapper {
+    width: 120px;
+    height: 120px;
+  }
+
+  .play-btn {
+    width: 70px;
+    height: 70px;
+  }
+
+  .bottom-desc {
+    font-size: 12px;
+    max-width: 220px;
+  }
+
+  .divider {
+    margin: 20px 24px 0;
+  }
+}
