@@ -9,10 +9,8 @@ const ProjectPage = () => {
   return (
     <section className="ps-section">
 
-      {/* ── TOP GOLD DIVIDER ── */}
       <hr className="ps-divider" />
 
-      {/* ── STATS ROW ── */}
       <div className="ps-stats">
         <div className="ps-stat">
           <p className="ps-stat-number">12+</p>
@@ -28,19 +26,15 @@ const ProjectPage = () => {
         </div>
       </div>
 
-      {/* ── BOTTOM GOLD DIVIDER ── */}
       <hr className="ps-divider" />
 
-      {/* ── CENTER HEADING ── */}
       <h2 className="ps-heading">
         One step towards your <br /> dream home
       </h2>
       <p className="ps-subheading">Challenging ourselves in every project</p>
 
-      {/* ── MAIN CONTENT ROW ── */}
       <div className="ps-content">
 
-        {/* LEFT: bust image + paragraph */}
         <div className="ps-left">
           <div className="ps-bust-wrapper">
             <div className="ps-gold-bar" />
@@ -53,13 +47,10 @@ const ProjectPage = () => {
           </p>
         </div>
 
-        {/* RIGHT: overlapping images */}
         <div className="ps-right">
-          {/* gold rectangle behind horses */}
+
           <div className="ps-gold-rect" />
-          {/* horses image */}
           <img src={horsesImg} alt="Horses" className="ps-horses" />
-          {/* garden image overlaps in front */}
           <img src={gardenImg} alt="Garden" className="ps-garden" />
         </div>
 

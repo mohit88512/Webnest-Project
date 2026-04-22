@@ -1,8 +1,3 @@
-/* ============================================
-   footer.css
-   Desktop: 1080px | Responsive below
-   ============================================ */
-
 .footer {
   background: #2b2d2f;
   color: #7a9ab0;
@@ -103,7 +98,6 @@
   margin-bottom: 4px;
 }
 
-/* BUTTON */
 .footer-btn {
   width: 100%;
   padding: 17px;
@@ -122,10 +116,7 @@
 }
 
 
-/* ============================================
-   RESPONSIVE
-   ============================================ */
-
+/* responsive */
 @media (max-width: 1080px) {
   .footer {
     width: 100%;
@@ -157,7 +148,6 @@
     margin-bottom: 40px;
   }
 
-  /* Hide vertical divider, show horizontal instead */
   .footer-divider {
     width: 100%;
     height: 1px;

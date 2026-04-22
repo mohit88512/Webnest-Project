@@ -1,8 +1,3 @@
-/* ============================================
-   designPage.css
-   Desktop: 1080px | Responsive below
-   ============================================ */
-
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
 
 .designMain {
@@ -34,7 +29,6 @@
   margin: 0 auto 50px;
 }
 
-/* HERO IMAGE */
 .imgWrapper {
   position: relative;
   margin-bottom: 60px;
@@ -177,10 +171,7 @@
   color: #cbd5e0;
 }
 
-
-/* ============================================
-   RESPONSIVE
-   ============================================ */
+/* responsive */
 
 @media (max-width: 1080px) {
   .designMain {
